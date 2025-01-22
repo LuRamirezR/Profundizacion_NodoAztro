@@ -14,6 +14,11 @@ To start your app in development mode, use:
 npm run dev
 ```
 
+## App Result
+By clicking on any item in the sidebar, the main section displays the name, achievements and image of the selected rider.
+![Project Screenshot](../01-my-remix-app/app/images/Screenshot_2.png "Preview of the app")
+![Project Screenshot](../01-my-remix-app/app/images/Screenshot_1.png "Preview of the app")
+
 ## Remix concepts
 
 ### 1. Link Component
