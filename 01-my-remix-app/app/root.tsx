@@ -1,4 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
+
 import appStylesHref from "./app.css?url";
 import { json } from "@remix-run/node";
 
@@ -13,7 +14,7 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 
-import { getContacts } from "./data";
+import { createEmptyContact, getContacts } from "../app/data";
 
 
 export const links: LinksFunction = () => [
@@ -23,6 +24,11 @@ export const links: LinksFunction = () => [
 export const loader = async () => {
   const contacts = await getContacts();
   return json({ contacts });
+};
+
+export const action = async () => {
+  const contact = await createEmptyContact();
+  return json(contact, { status: 201});
 };
 
 export default function App() {
@@ -38,7 +44,7 @@ export default function App() {
       </head>
       <body>
         <div id="sidebar">
-          <h1>Remix Contacts</h1>
+          <h1>Remix Riders</h1>
           <div>
             <Form id="search-form" role="search">
               <input
