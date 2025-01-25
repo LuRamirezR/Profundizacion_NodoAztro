@@ -19,6 +19,11 @@ By clicking on any item in the sidebar, the main section displays the name, achi
 ![Project Screenshot](../01-my-remix-app/app/images/Screenshot_2.png "Preview of the app")
 ![Project Screenshot](../01-my-remix-app/app/images/Screenshot_1.png "Preview of the app")
 
+## New features
+A new feature has been added to the application. The `New` button now allows you to create a new item in the list. In the main section, default information is displayed. By clicking the `Edit` button, you can input the following details: first name, last name, description, image URL, and notes. To save this information, simply click `Save`, and the new item will appear in the list.
+![Project Screenshot](../01-my-remix-app/app/images/Screenshot_New1.png "Preview of the app")
+![Project Screenshot](../01-my-remix-app/app/images/Screenshot_New2.png "Preview of the app")
+
 ## Remix concepts
 
 ### 1. Link Component
