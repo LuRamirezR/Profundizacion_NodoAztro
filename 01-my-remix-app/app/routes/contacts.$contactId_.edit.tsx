@@ -1,4 +1,4 @@
-import { json, LoaderFunctionArgs, redirect } from "@remix-run/node";
+import { ActionFunctionArgs, json, LoaderFunctionArgs, redirect } from "@remix-run/node";
 import invariant from "tiny-invariant";
 import { getContact, updateContact } from "../data";
 import { Form, useLoaderData } from "@remix-run/react";
@@ -16,16 +16,18 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 
 // Función de acción, trae los datos del formulario y actualiza el contacto
 // consigue la informacion renderizada y enviarla a la API
-export const action = async ({ request, params }: LoaderFunctionArgs) => {
+export const action = async ({ request, params }: ActionFunctionArgs) => {
     invariant(request.method === "POST", "Method Not Allowed");
     invariant(params.contactId, "Missing contactId param");
 
     const formData = await request.formData();
+    // const firstName = formData.get("first");
+    // const lastName = formData.get("last");
     const updates = Object.fromEntries(formData);
 
     await updateContact(params.contactId, updates);
 
-    return redirect(`/contacts/${params.contactId}`, { status: 200 });
+    return redirect(`/contacts/${params.contactId}`, { status: 301 });
 };
 
 

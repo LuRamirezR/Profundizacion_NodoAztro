@@ -77,7 +77,7 @@ export default function Contact() {
             method="post"
             onSubmit={(event) => {
               const response = confirm(
-                "Please confirm you want to delete this record."
+                "Por favor confirma que quieres eliminar este corredor de la lista"
               );
               if (!response) {
                 event.preventDefault();
