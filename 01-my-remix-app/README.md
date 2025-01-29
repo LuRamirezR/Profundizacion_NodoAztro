@@ -22,7 +22,7 @@ By clicking on any item in the sidebar, the main section displays the name, achi
 ## New features
 ### 1. Create new item and edit item
 A new feature has been added to the application. The `New` button now allows you to create a new item in the list. In the main section, default information is displayed. By clicking the `Edit` button, you can input the following details: first name, last name, description, image URL, and notes.  
-To save this information, simply click `Save`, and the new item will appear in the list. If you want to undo the changes before saving them, you can use the `Cancel` button, which will roll back one entry in the browser history.
+To save this information, simply click `Save`, and the new item will appear in the list. If you want to undo the changes before saving them, you can use the `Cancel` button, which will roll back one entry in the browser history.  
 ![Project Screenshot](../01-my-remix-app/app/images/Screenshot_New1.png "Preview of the app")
 ![Project Screenshot](../01-my-remix-app/app/images/Screenshot_New2.png "Preview of the app")
 
